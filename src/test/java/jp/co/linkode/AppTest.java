@@ -15,10 +15,4 @@ public class AppTest {
     App target = new App();
     assertTrue(target.method02());
   }
-
-  @Test
-  public void mtehodSlow01_test() {
-    App target = new App();
-    assertTrue(target.mtehodSlow01());
-  }
 }
