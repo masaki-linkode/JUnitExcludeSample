@@ -1,38 +1,24 @@
 package jp.co.linkode;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest {
+  @Test
+  public void method01_test() {
+    App target = new App();
+    assertTrue(target.method01());
+  }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+  @Test
+  public void method02_test() {
+    App target = new App();
+    assertTrue(target.method02());
+  }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+  @Test
+  public void mtehodSlow01_test() {
+    App target = new App();
+    assertTrue(target.mtehodSlow01());
+  }
 }
